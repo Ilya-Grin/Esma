@@ -1,5 +1,5 @@
 # Esma
-[Esma](https://ilya-grin.github.io/Artificial-Intelligence/)
+[Esma]()
 ____
 Создатель: Илья Анусевич
 ## Технологии
