@@ -1,0 +1,273 @@
+/*Zeroing*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	/* font-family: "Ubuntu", Helvetica, Arial, sans-serif; */
+	font-family: "Ubuntu Condensed", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input ::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button ::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+input::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: inherit;
+}
+
+input::-moz-placeholder {
+	/* Firefox 19+ */
+	color: inherit;
+	opacity: 1;
+}
+
+input:-ms-input-placeholder {
+	/* IE 10+ */
+	color: inherit;
+}
+
+input:-moz-placeholder {
+	/* Firefox 18- */
+	color: inherit;
+	opacity: 1;
+}
+/*--------------------*/
+.header {
+	border-bottom: 1px solid #c2c2c2;
+}
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.header__body {
+	padding: 35px 0 25px 0;
+}
+.header__navigation {
+	width: 100%;
+}
+.header__menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.header__menu img {
+	vertical-align: middle;
+}
+.menu-item {
+	text-transform: uppercase;
+	color: #c2c2c2;
+	font-size: 12px;
+}
+.menu-item a {
+	color: #708fc9;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+}
+.menu-item a:hover {
+	text-decoration: underline;
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	align-items: center;
+}
+.header__logo {
+	max-width: 250px;
+}
+.header__input {
+	background: #708fc9;
+	padding: 8px 5px;
+	font-size: 16px;
+	color: #fff;
+}
+.header__button {
+	color: #fff;
+	background: #383d91;
+	font-size: 14px;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	padding: 10px 30px;
+}
+
+.navigation {
+	border-bottom: 1px solid #c2c2c2;
+}
+.navigation__body {
+}
+.navigation__menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.navigation__item {
+	padding: 20px 10px;
+}
+.navigation__item a {
+	color: #3b3d91;
+}
+.navigation__item:first-child a {
+	color: #fff;
+}
+.navigation__item:first-child {
+	background: #708fc9;
+}
+
+.board__body {
+	display: flex;
+	justify-content: space-between;
+	padding: 100px 0 100px 0;
+}
+.board__about {
+	max-width: 550px;
+}
+.board__title {
+	font-size: 42px;
+	margin: 0 0 35px 0;
+	color: #3b3d91;
+	text-transform: uppercase;
+}
+.board__subtitle {
+	font-size: 20px;
+	margin: 0 0 35px 0;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+.board__text {
+	text-align: justify;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	line-height: 22px;
+	margin: 0 0 15px 0;
+}
+.board__publication {
+	max-width: 300px;
+	background: #f2f2f2;
+	padding: 18px;
+	text-align: center;
+}
+.publication-title {
+	text-transform: uppercase;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #3b3d91;
+	margin: 10px 0 20px 0;
+}
+.publication-menu {
+}
+.publication-item {
+	text-align: left;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	border-top: 1px solid #c2c2c2;
+	padding: 20px 0 0 0;
+}
+.publication-item::before {
+	content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: #3b3d91; /* Change the color */
+	font-weight: bold; /* If you want it to be bold */
+	display: inline-block;
+	width: 15px;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.publication-item a {
+	color: #3b3d91;
+	font-size: 14px;
+	font-weight: 500;
+}
+.publication-text {
+	font-size: 12px;
+	text-align: center;
+	font-weight: 400;
+}
+.publication-button {
+	color: #fff;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	padding: 12px 30px;
+	background: #4e76f9;
+	font-size: 11px;
+	display: inline-block;
+	margin: 20px 0 0 0;
+}
