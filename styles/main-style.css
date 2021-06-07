@@ -173,8 +173,6 @@ input:-moz-placeholder {
 .navigation {
 	border-bottom: 1px solid #c2c2c2;
 }
-.navigation__body {
-}
 .navigation__menu {
 	display: flex;
 	justify-content: space-around;
@@ -196,7 +194,10 @@ input:-moz-placeholder {
 .board__body {
 	display: flex;
 	justify-content: space-between;
-	padding: 100px 0 100px 0;
+	padding: 100px 0 0 0;
+}
+.board__body:last-child {
+	padding: 30px 0 0 0;
 }
 .board__about {
 	max-width: 550px;
@@ -234,8 +235,6 @@ input:-moz-placeholder {
 	color: #3b3d91;
 	margin: 10px 0 20px 0;
 }
-.publication-menu {
-}
 .publication-item {
 	text-align: left;
 	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
@@ -243,9 +242,9 @@ input:-moz-placeholder {
 	padding: 20px 0 0 0;
 }
 .publication-item::before {
-	content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-	color: #3b3d91; /* Change the color */
-	font-weight: bold; /* If you want it to be bold */
+	content: "\2022";
+	color: #3b3d91;
+	font-weight: bold;
 	display: inline-block;
 	width: 15px;
 	font-size: 20px;
@@ -270,4 +269,35 @@ input:-moz-placeholder {
 	font-size: 11px;
 	display: inline-block;
 	margin: 20px 0 0 0;
+}
+
+.board__table {
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	max-width: 550px;
+}
+.board__table td {
+	padding: 10px 20px;
+}
+.board__table img {
+	max-width: 16px;
+	vertical-align: middle;
+	margin: 0 10px 0 0;
+}
+.press {
+	background: none;
+	border: 1px solid #c2c2c2;
+}
+.press__item {
+	text-align: left;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	border-top: 1px solid #c2c2c2;
+	padding: 20px 0 0 0;
+}
+.press__item a {
+	color: #3b3d91;
+	font-size: 14px;
+	font-weight: 500;
+}
+.press__text {
+	text-align: left;
 }
