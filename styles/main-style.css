@@ -42,6 +42,7 @@ body {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	overflow-x: hidden;
 }
 
 input,
@@ -117,9 +118,11 @@ input:-moz-placeholder {
 .container {
 	max-width: 1024px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 .header__body {
 	padding: 35px 0 25px 0;
+	position: relative;
 }
 .header__navigation {
 	width: 100%;
@@ -337,8 +340,6 @@ input:-moz-placeholder {
 }
 .footer__title img {
 	margin: 0 0 0 5px;
-}
-.footer__navigation {
 }
 .footer__menu {
 	display: flex;
